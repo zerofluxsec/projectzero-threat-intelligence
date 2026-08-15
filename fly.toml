@@ -1,24 +1,29 @@
-# Replace app name on first deploy: fly apps create YOUR-UNIQUE-APP-NAME
-app = "projectzero-threat-intelligence"
-primary_region = "iad"
+# fly.toml app configuration file generated for projectzero-threat-intelligence on 2026-08-15T08:51:24Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'projectzero-threat-intelligence'
+primary_region = 'ams'
 
 [build]
-  dockerfile = "Dockerfile"
+  dockerfile = 'Dockerfile'
 
 [env]
-  NODE_ENV = "production"
-  HOST = "0.0.0.0"
-  PORT = "8080"
+  HOST = '0.0.0.0'
+  NODE_ENV = 'production'
+  PORT = '8080'
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = "stop"
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
-  memory = "512mb"
-  cpu_kind = "shared"
+  memory = '512mb'
+  cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 256
