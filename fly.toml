@@ -1,5 +1,5 @@
 # Replace app name on first deploy: fly apps create YOUR-UNIQUE-APP-NAME
-app = "threat-intel-dashboard"
+app = "projectzero-threat-intel-dashboard"
 primary_region = "iad"
 
 [build]
