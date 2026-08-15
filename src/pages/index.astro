@@ -65,9 +65,36 @@ function formatCollected(iso: string | null) {
 	</head>
 	<body class="min-h-screen bg-zinc-950 bg-[radial-gradient(ellipse_120%_80%_at_50%_-20%,rgb(39_39_42_/_0.35),transparent)] text-zinc-100 antialiased">
 		<main class="mx-auto max-w-7xl px-5 py-10 sm:px-8">
-			<header class="mb-10 border-b border-white/[0.06] pb-8">
+			<header class="mb-10 flex flex-wrap items-end justify-between gap-4 border-b border-white/[0.06] pb-8">
+			<div>
 				<p class="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-500">Threat intelligence</p>
 				<h1 class="mt-1 text-2xl font-semibold tracking-tight text-white sm:text-3xl">Dashboard</h1>
+			</div>
+			<nav class="flex flex-wrap items-center gap-4 text-sm" aria-label="Primary">
+				<a class="text-zinc-400 transition-colors hover:text-sky-300" href="/">Dashboard</a>
+				<a
+				class="text-zinc-400 transition-colors hover:text-sky-300"
+				href="https://github.com/zerofluxsec"
+				target="_blank"
+				rel="noopener noreferrer"
+				>
+				GitHub
+				</a>
+				<a
+				class="text-zinc-400 transition-colors hover:text-sky-300"
+				href="https://zerofluxsec.com"
+				target="_blank"
+				rel="noopener noreferrer"
+				>
+				Blog
+				</a>
+				<a
+				class="text-zinc-400 transition-colors hover:text-sky-300"
+				href="mailto:msegrt@proton.me"
+				>
+				Contact
+				</a>
+			</nav>
 			</header>
 
 			<section class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-6 xl:gap-6">
